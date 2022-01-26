@@ -1,101 +1,105 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso_HTML</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="grid.css">
 </head>
-
-<body>
-    <header>
-        <nav class="nav">
-            <div class="nav_items">
-
-                <a href="./index.html"><img src="./Imagenes/logo_tacoma.jpg" alt="logo de la empresa"></a>
-                <ul>
-                    <li><a href="./promociones.html">PROMOCIONES<a></li>
-                    <li><a href="./reflectores.html">REFLECTORES</a></li>
-                    <li><a href="./paneles.html">PANELES</a></li>
-                    <li><a href="./contactos.html">CONTACTO</a></li>
-                </ul>
-
-
-            </div>
-
-        </nav>
+<body class="container">
+    
+    <header class="encabezado">
+        <img src="./Imagenes/logo_tacoma.jpg" alt="">        
     </header>
-    <section>
 
-        <div class="caja_principal">
-            <h1>NUESTROS PRODUCTOS</h1>
+    <nav class="nav">
+        <div class="nav item">  
+            <ul>
+                <li><a href="./promociones.html">PROMOCIONES<a></li>
+                <li><a href="./reflectores.html">REFLECTORES</a></li>
+                <li><a href="./paneles.html">PANELES</a></li>
+                <li><a href="./contactos.html">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
 
-                <div class="contenido">
-                    <div class="card">
-                        <div class="card_img">
-                            <img class="img1" src="./Imagenes/carrousel/lampara1.png" alt="foto De Lampara">
-                        
-                        </div>
-                        <div class="card_content">
-                            <a href="./paneles.html">
-                            <h3>LAMPARA FOCO LED</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur fuga ut delectus similique magni possimus architecto, tenetur accusamus explicabo quas dignissimos impedit corporis provident pariatur molestiae, eveniet laudantium sit.</p>
-                            <h5>$500,00<h5>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card_img">
-                            <img class="img1" src="./Imagenes/carrousel/reflector1.png" alt="foto De Lampara">
-                        
-                        </div>
-                        <div class="card_content">
-                            <a href="./reflectores.html">
-                            <h3>REFLECTORES</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur fuga ut delectus similique magni possimus architecto, tenetur accusamus explicabo quas dignissimos impedit corporis provident pariatur molestiae, eveniet laudantium sit.</p>
-                            <h5>$1500,00<h5>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card_img">
-                            <img class="img1" src="./Imagenes/carrousel/imagen3.png" alt="foto De Lampara">
-                        
-                        </div>
-                        <div class="card_content">
-                            <a href="./paneles.html">
-                            <h3>LAMPARAS LED</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur fuga ut delectus similique magni possimus architecto, tenetur accusamus explicabo quas dignissimos impedit corporis provident pariatur molestiae, eveniet laudantium sit.</p>
-                            <h5>$750,00<h5>
-                            </a>
-                        </div>
-                        
-                    </div>
-                    <div class="card">
-                        <div class="card_img">
-                            <img class="img1" src="./Imagenes/carrousel/imagen2.png" alt="foto De Lampara">
-                        
-                        </div>
-                        <div class="card_content">
-                            <a href="./paneles.html">
-                            <h3>PANELES</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur fuga ut delectus similique magni possimus architecto, tenetur accusamus explicabo quas dignissimos impedit corporis provident pariatur molestiae, eveniet laudantium sit.</p>
-                            <h5>$1200,00<h5>
-                            </a>
-                        </div>
-                        
-                    </div>
-
+    <main>
+        <div class="baner">
+            <img src="./Imagenes/img_backgroud_tacoma.png" alt="">
+        </div>
+        <div class="bienvenida">
+            <div class="bien_item">
+                <h2>quienes somos</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione quibusdam debitis eaque, nulla ipsam tempora nostrum esse distinctio 
+                    exercitationem omnis officiis consectetur quo cumque cupiditate ex tenetur voluptates deleniti aliquid?
+                </p>
+                <a href="#">contacto</a>
+            </div>
+        </div>
+    </main>
+    
+    <section class="seccion">
+        <div class="articulos">
+            <div class="card">
+                <div class="card_img">
+                    <img class="img1" src="./Imagenes/carrousel/lampara1.png" alt="foto De Lampara">
+                
+                </div>
+                <div class="card_content">
+                    <a href="./paneles.html">
+                    <h3>LAMPARA FOCO LED</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur fuga ut delectus similique magni possimus architecto, tenetur accusamus explicabo quas dignissimos impedit corporis provident pariatur molestiae, eveniet laudantium sit.</p>
+                    <h5>$500,00<h5>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_img">
+                    <img class="img1" src="./Imagenes/carrousel/reflector1.png" alt="foto De Lampara">
+                
+                </div>
+                <div class="card_content">
+                    <a href="./reflectores.html">
+                    <h3>REFLECTORES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur fuga ut delectus similique magni possimus architecto, tenetur accusamus explicabo quas dignissimos impedit corporis provident pariatur molestiae, eveniet laudantium sit.</p>
+                    <h5>$1500,00<h5>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_img">
+                    <img class="img1" src="./Imagenes/carrousel/imagen3.png" alt="foto De Lampara">
+                
+                </div>
+                <div class="card_content">
+                    <a href="./paneles.html">
+                    <h3>LAMPARAS LED</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur fuga ut delectus similique magni possimus architecto, tenetur accusamus explicabo quas dignissimos impedit corporis provident pariatur molestiae, eveniet laudantium sit.</p>
+                    <h5>$750,00<h5>
+                    </a>
                 </div>
                 
-
-
+            </div>
+            <div class="card">
+                <div class="card_img">
+                    <img class="img1" src="./Imagenes/carrousel/imagen2.png" alt="foto De Lampara">
+                
+                </div>
+                <div class="card_content">
+                    <a href="./paneles.html">
+                    <h3>PANELES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur fuga ut delectus similique magni possimus architecto, tenetur accusamus explicabo quas dignissimos impedit corporis provident pariatur molestiae, eveniet laudantium sit.</p>
+                    <h5>$1200,00<h5>
+                    </a>
+                </div>
+                
+            </div>
         </div>
-
     </section>
-
 
     <footer>
         <div class="pie">
@@ -118,6 +122,6 @@
             </div>
         </div>
     </footer>
-</body>
 
+</body>
 </html>
