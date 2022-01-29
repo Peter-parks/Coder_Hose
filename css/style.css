@@ -1,101 +1,147 @@
 body{
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
 }
 
 
-/* Barra de Navegacion */
+.container{
+    background: rgb(13,107,166);
+    background: linear-gradient(148deg, rgba(13,107,166,1) 0%, rgba(18,70,115,1) 42%, rgba(65,174,217,1) 100%);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 10% 3% 1fr 1fr 15%;
+    row-gap: 10px;
 
-
-.nav {
-    border-bottom: 2px solid black;
-    width: 100%;
-    height: 200px;
-    background-image: url(./Imagenes/img_backgroud_tacoma.png);
-    background-attachment:fixed;
-    background-size: cover;
-    background-position: 20px ;
-    
 }
 
-.nav_items{
+.encabezado{
+
+    grid-column: 1/ span 4;
+    grid-row: 1 / 2;
     display: flex;
-    flex-wrap: row wrap;
-    justify-content: space-between;
-}
-
-.nav_items img {
-    padding: 30px;
-   height: 150px;
-   width:auto ;
-   border-radius: 50%;
-}
-
-.nav_items img:hover{
-    height: 152px;
-   width:auto ;
-}
-
-.nav_items ul {
-    display: flex;
-    flex-wrap: row wrap;
-    justify-content:left;
-    align-items: flex-end;
-    list-style: none;
-}
-
-.nav_items li{
+    justify-content: center;
+    padding: 8px 0;
     
-    margin: 20px;   
-    padding: 15px;
-}
-
-.nav_items li a:hover {
    
-   font-size: 20px;
-   color: #0D6BA6;
+    
+  
+}
+
+.encabezado img {
+    
+   
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px #F2CB05;
+}
+
+.nav{
+    grid-column: 1/span 4;
+    grid-row: 2 /3 ;
+    margin: 5px 0;
+ 
+}
+
+.item{
+    border-top: 3px solid #F2CB05;
+    border-bottom:3px solid #F2CB05 ;
+    text-align: center;
 }
 
 
+.nav .item ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    
 
-.nav_items a {
+}
+
+.nav ul a {
     text-decoration: none;
+    text-transform: uppercase;
     font-weight: 900;
-    color: #F2CB05
-    ;
     font-size: 1em;
+    color: #F2CB05;
+    
+}
+
+
+main{
+    
+    grid-column: 1/ span 4;
+    grid-row: 3/4 ;
+    height: 70%;
+}
+
+.baner{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.baner img{
+    padding: 0;
+    object-fit: fill;
+    width: 100%;
+    
+}
+
+.form_container{
+    width: 50%;
+    
+}
+
+.bienvenida{
+    width: 60%;
+}
+
+.bien_item{
+    position: relative;
+    left: 33%;
+    text-align: center;
+    color: #F2CB05;
+    text-transform: uppercase;
+    line-height: 1.5em;
     
 }
 
 
 
-/* Section */
+.bienvenida a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #41AED9;
+    display: inline-block;
+    box-shadow: 0px 0px 15px #F2CB05;
+     padding: 10px 20px;
+}
 
-.caja_principal{
-    margin: 0;
-    padding: 0;
+/* seccion de Card */
+
+.seccion{
+    
+    grid-column: 1/ span 4;
+    grid-row: 4 / 5;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     
-
 }
 
-.caja_principal h1{
-    font-size: 30px;
+.seccion h6{
+    font-weight: 900;
+    font-size: 2.5em;
 }
 
-.contenido{
-    width: 100%;
+.articulos{
     display: flex;
-    
     justify-content: space-evenly;
-  
+    padding: 30px 0;
+    width: 100%;
+
 }
-  
 .card{
     position: relative;
     width: 300px;
@@ -103,8 +149,11 @@ body{
     box-shadow: 0 30px 30px black;
     background-color: black;
     margin: 10px;
-    
+    border-radius: 5%;
+    padding: 10px;
+
 }
+
 
 .card .card_img {
     position: absolute;
@@ -114,6 +163,8 @@ body{
     height: 100%;
 }
 
+
+
 .card .card_img img {
     position: absolute;
     top: 0;
@@ -122,10 +173,13 @@ body{
     height: 100%;
     object-fit: cover;
     transition: 0.5s;
+    border-radius: 5%;      
 }
 
+
+
 .card:hover .card_img img {
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 
@@ -137,6 +191,7 @@ body{
     height: 60px;
     transition: 0.5s;
     overflow: hidden;
+    text-align: center;
 }
 
 .card_content:hover{
@@ -147,22 +202,21 @@ body{
     left: 0;
 }
 
+
+
 .card_content a {
     text-decoration: none;
+    color: #F2CB05;
 }
 
-.card_content h3{
-    text-align: center;
-    font-size: 20px;
-    color: #F2CB05;
-    font-weight: 700;
-}
+
 
 .card_content p {
     text-align: center;
     line-height: 30PX;
     font-weight: 700;
     color: #0D6BA6;
+    padding: 0 10px;
     
 }
 
@@ -173,141 +227,75 @@ body{
 }
 
 
+/* pie de pagina */
 
-/* footer */
 footer{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    position: relative;
-    bottom: 0px;
-    background-image: url(./Imagenes/img_backgroud_tacoma.png);
-    background-attachment: fixed;
-    background-size: cover;
-
-    text-align: center;
-
+   
+    grid-column: 1 / span 4;
+    grid-row: 5 / 6;
+    border-top:3px solid #F2CB05 ;
 }
 
-
-
-.pie_redes a img{
-
-    height: 3em;
-    width: auto;
-    padding: 5px;
+.pie{
+    text-align: center;
 }
 
 .pie_redes h4 {
-
-    padding: 10px;
-    font-weight: 900;
-    color: #F2CB05
-    ;
     font-size: 1.5em;
+    color: #F2CB05;
+}
+
+.pie_redes a {
+    padding: 0 5px;
 
 }
 
 .pie_contacto a {
     text-decoration: none;
-    color: #0D6BA6;
-    font-weight: 900;
-    font-size: 20px;
+    color: #F2CB05;
 }
 
-.pie_contacto p {
-padding: 0;
-margin: 0;
+@media screen and (max-width:920px) {
 
-}
- .pie_contacto{
-     color: #0D6BA6;
- }
+    .nav .item ul{
+        display: flex;
+        flex-wrap: wrap;
 
-
- /* tablas */
-
- .table_content {
-    height: 400px;
-    padding: 13px;
-    display: flex;
-    justify-content: space-evenly;
- }
-
- .table_info {
-    box-shadow: 0 30px 30px black;
- }
-
- .table_info th {
-    font-size: 25px;
-    background-color:#0D6BA6;
-
- }
-
- .table_info td {
-     padding: 10px;
-     font-size: 15px;
-     font-weight: 700;
-     border: none;
-
- }
-
-
- /* contactos (FORM) */
-
- .contactos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     }
 
-.formulario {
-    width: 40%;
+    .item li{
+        padding: 2px 0 ;
+    }
+
+    .baner{
+    padding: 15px 0;
+    }
+
+    .bien_item h2{
     
-    margin: 10px;
-    padding: 10px;
-    border: inset;
-    box-shadow: 2px 5px 20px black;
+        line-height: 1.5em;
+    }
+
+    .seccion .articulos {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .mapouter{
+        width: 100%;
+    }
+
+    .container{
+       
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 10% 3% 800px 1fr 8%;
+        
+    
+    }
+
 }
-
-.formulario h2 {    
-
-    text-align: center;
-    font-size: 2em;
-    font-weight: 700;
-    color: #0D6BA6 ;
-
-}
-
-.formulario .id_form {
-    display: flex;
-   
-}
-
-.formulario .id_form .id {
-
-    font-weight: 1.5em;
-    font-weight: 900;
-    padding: 10px;
-}
-
-.formulario  .consultas_form {
-    margin: 6px;
-    padding: 3px
-}
-
-
-
-.boton_form input {
-
-    width: 120px;
-}
-
-.boton_form .enviar {
-    background-color:#0D6BA6 ;
-}
-
-
-
-
-
