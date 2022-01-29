@@ -34,7 +34,13 @@ body{
     
    
     border-radius: 50%;
-    box-shadow: 0px 0px 50px #F2CB05;
+    box-shadow: 0px 0px 50px #F2CB05;    
+}
+
+.encabezado img:hover{
+    animation-duration: 6s;
+    animation-name: girando;
+    animation-timing-function: ease-out;
 }
 
 /* nav style */
@@ -112,14 +118,19 @@ main{
 }
 
 
-
 .bienvenida a {
     text-decoration: none;
     font-size: 1.5em;
     color: #41AED9;
     display: inline-block;
     box-shadow: 0px 0px 15px #F2CB05;
-     padding: 10px 20px;
+    padding: 10px 20px;
+
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-duration: 6s;
+    
+     
     }
 
 /* form style */
@@ -442,5 +453,33 @@ footer{
 
         margin-top: 40px;
     
+    }
+}
+
+/* *************************************************
+*********************ANIMACIONES******************************** */
+
+@keyframes slidein {
+    
+    from {
+        margin-left:100%;
+        
+    }
+      
+    to {
+        margin-left:0%;
+       
+    }
+      
+   
+}
+
+@keyframes girando {
+    from {
+        transform : rotate(0grad);
+    }
+
+    to{
+        transform : rotate(400grad);
     }
 }
