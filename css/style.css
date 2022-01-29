@@ -1,6 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
+ 
 }
 
 
@@ -11,8 +12,10 @@ body{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 10% 3% 1fr 1fr 15%;
     row-gap: 10px;
-
+ 
 }
+
+/* encabezado (logo de tacomma) */
 
 .encabezado{
 
@@ -34,10 +37,13 @@ body{
     box-shadow: 0px 0px 50px #F2CB05;
 }
 
+/* nav style */
+
 .nav{
     grid-column: 1/span 4;
     grid-row: 2 /3 ;
     margin: 5px 0;
+   
  
 }
 
@@ -45,6 +51,7 @@ body{
     border-top: 3px solid #F2CB05;
     border-bottom:3px solid #F2CB05 ;
     text-align: center;
+    
 }
 
 
@@ -65,6 +72,7 @@ body{
     
 }
 
+/* principal */
 
 main{
     
@@ -78,6 +86,7 @@ main{
     justify-content: center;
     align-items: center;
     padding-top: 10px;
+    
 }
 
 .baner img{
@@ -87,13 +96,9 @@ main{
     
 }
 
-.form_container{
-    width: 50%;
-    
-}
-
 .bienvenida{
     width: 60%;
+    
 }
 
 .bien_item{
@@ -115,6 +120,47 @@ main{
     display: inline-block;
     box-shadow: 0px 0px 15px #F2CB05;
      padding: 10px 20px;
+    }
+
+/* form style */
+
+.bloque {
+    grid-column: 1/ span 4;
+    grid-row: 3/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.form_container{
+    background-color: rgb(230, 230, 245, 0.1) ;
+    box-shadow: 0px 0px 10px 0px #333 inset;
+    width: 600px;
+    padding-left: 15px;
+
+
+}
+
+.id_form {
+    width: 200px;
+    
+}
+
+.boton_form input{
+    height: 40px;
+}
+
+.boton_form .enviar {
+    background-color:#F2CB05;
+}
+
+.seccion_map h6 {
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 /* seccion de Card */
@@ -142,6 +188,42 @@ main{
     width: 100%;
 
 }
+
+/* seccion de PANELES */
+
+.seccion_paneles {
+    
+    grid-column: 1/ span 4;
+    grid-row: 3 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.articulos_paneles {
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+
+}
+
+.articulos_paneles h6{
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 2.5em;
+}
+
+.articulos_paneles .contenido {
+
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+/* CARDS */
+
 .card{
     position: relative;
     width: 300px;
@@ -226,6 +308,22 @@ main{
     color: #F2CB05;
 }
 
+/* promociones style */
+.table_content{
+    grid-column: 1/ span 4;
+    grid-row: 3/5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.table_box h3{
+    font-size: 1em;
+    font-weight: 900;
+    letter-spacing: 2.5em;
+}
 
 /* pie de pagina */
 
@@ -255,11 +353,21 @@ footer{
     color: #F2CB05;
 }
 
-@media screen and (max-width:920px) {
+@media screen and (max-width:980px) {
+
+    .container{
+       
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 10% 3% 800px 1fr 8%;
+       
+        
+    
+    }
 
     .nav .item ul{
         display: flex;
-        flex-wrap: wrap;
+        flex-flow:column wrap;
 
     }
 
@@ -268,8 +376,10 @@ footer{
     }
 
     .baner{
-    padding: 15px 0;
+    padding: 60px 0;
     }
+
+    
 
     .bien_item h2{
     
@@ -282,20 +392,55 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        ;
 
     }
 
-    .mapouter{
-        width: 100%;
-    }
+    
 
-    .container{
-       
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 10% 3% 800px 1fr 8%;
+   
+
+    /* paneles */
+
+    .articulos_paneles .contenido {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
         
     
     }
 
+    .articulos_paneles h6{
+     
+        font-size: 2em;
+        font-weight: 900;
+        letter-spacing: 0;
+    }
+   
+}
+
+
+
+@media screen and (max-width:630px){
+    .form_container{
+        width: 300px;
+    }
+
+    .seccion_map {
+        display: none;
+     }
+
+    .table_content {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width:320px){
+    .articulos{
+
+        margin-top: 40px;
+    
+    }
 }

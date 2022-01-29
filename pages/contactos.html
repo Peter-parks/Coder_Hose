@@ -9,17 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../grid.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="container">
     <header class="encabezado">
-        <img src="../Imagenes/logo_tacoma.jpg" alt="">        
+        <img src="../Imagenes/logo_tacoma.jpg" alt="logo tacoma">   
     </header>
 
     <nav class="nav">
         <div class="nav item">  
             <ul>
+                <li><a href="../index.html">INICIO<a></li>
                 <li><a href="./promociones.html">PROMOCIONES<a></li>
                 <li><a href="./reflectores.html">REFLECTORES</a></li>
                 <li><a href="./paneles.html">PANELES</a></li>
@@ -28,62 +29,62 @@
         </div>
     </nav>
 
-    <main>
-        <form class="baner formulario" action="">
-                <div class="form_container">
-                    <h2>CONTACTO</h2>
+  
 
-                    <div class="id_form">
-                        <div class="id">
-                            <label for="Id_name">Nombre</label>
-                            <input type="text" id="Id_name" placeholder="Nombre">
-                        </div>
-                        <div class="id">
-                            <label for="Telefono">Telefono</label>
-                            <input type="number" id="Telefono" placeholder="Telefono">
-                        </div>
-
-                        <div class="id">
-                            <label for="mail">Mail</label>
-                            <input type="email" id="mail" placeholder="Mail">
-                        </div>
-                    </div>
-
-                    <div class="consultas_form">
-
-                        <input type="radio" id="consultas" name="consultas" value="consultas">
-                        <label for="Masculino">Consultas</label><br>
-                        <input type="radio" id="Presupuesto" name="consultas" value="Presupuesto">
-                        <label for="Presupuesto">Presupuesto</label><br>
-                        <input type="radio" id="Devoluciones" name="consultas" value="Devoluciones">
-                        <label for="Devoluciones">Devoluciones</label>
-
-                    </div>
-
-                    <div>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Observaciones"></textarea>
-                    </div>
-                    
-                    <div class="boton_form">
-                        <input class="enviar" type="submit" value="Enviar">
-                        <input class="borrar" type="reset" value="Borrar">
-                    </div>
-                </div>       
-                
-        </form>
+    <div class="bloque">
         
-    </main>
+        <div class="form_container">
+            <h2>CONTACTO</h2>
 
-    <section class="seccion">
-      
-        <div>
-            <section class="seccion">
+            <div class="id_form">
+                <div class="id">
+                    <label for="Id_name">Nombre</label>
+                    <input type="text" id="Id_name" placeholder="Nombre">
+                </div>
+                        
+                <div class="id">
+                    <label for="Telefono">Telefono</label>
+                    <input type="number" id="Telefono" placeholder="Telefono">
+                </div>
+
+                <div class="id">
+                    <label for="mail">Mail</label>
+                    <input type="email" id="mail" placeholder="Mail">
+                </div>
+                        
+
+                <div class="consultas_form">
+
+                    <input type="radio" id="consultas" name="consultas" value="consultas">
+                    <label for="Masculino">Consultas</label><br>
+                    <input type="radio" id="Presupuesto" name="consultas" value="Presupuesto">
+                    <label for="Presupuesto">Presupuesto</label><br>
+                    <input type="radio" id="Devoluciones" name="consultas" value="Devoluciones">
+                    <label for="Devoluciones">Devoluciones</label>
+
+                </div>
+
+                <div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Observaciones"></textarea>
+                </div>
+                        
+                <div class="boton_form">
+                    <input class="enviar" type="submit" value="Enviar">
+                    <input class="borrar" type="reset" value="Borrar">
+                </div>        
+            </div>        
+        </div>       
+                    
+       
+            
+        <div class="seccion_map">
+            <section class="map">
                 <h6>COMO LLEGAR</h6>
                 <div class="mapouter">
                     <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                            href="https://putlocker-is.org"></a><br>
+                        src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://putlocker-is.org"></a><br>
                         <style>
                             .mapouter {
                                 position: relative;
@@ -93,18 +94,20 @@
                             }
                         </style><a href="https://www.embedgooglemap.net">how to add google map to my website</a>
                         <style>
-                            .gmap_canvas {
-                                overflow: hidden;
-                                background: none !important;
-                                height: 500px;
-                                width: 600px;
-                            }
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 500px;
+                                    width: 600px;
+                                }
                         </style>
                     </div>
                 </div>
             </section>
         </div>
-    </section>
+    
+    </div>        
+          
 
     <footer>
         <div class="pie">
