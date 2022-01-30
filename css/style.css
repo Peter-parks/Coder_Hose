@@ -127,7 +127,7 @@ main{
     padding: 10px 20px;
 
     animation-duration: 3s;
-    animation-name: slidein;
+    animation-name: deslizamiento;
     animation-duration: 6s;
     
      
@@ -459,7 +459,7 @@ footer{
 /* *************************************************
 *********************ANIMACIONES******************************** */
 
-@keyframes slidein {
+@keyframes deslizamiento {
     
     from {
         margin-left:100%;
