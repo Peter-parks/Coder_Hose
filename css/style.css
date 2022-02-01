@@ -10,7 +10,7 @@ body{
     background: linear-gradient(148deg, rgba(13,107,166,1) 0%, rgba(18,70,115,1) 42%, rgba(65,174,217,1) 100%);
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 10% 3% 1fr 1fr 15%;
+    grid-template-rows: 10% 4% 40% 29% 15%;
     row-gap: 10px;
  
 }
@@ -91,7 +91,8 @@ main{
     display: grid;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
+
+    
     
 }
 
@@ -125,6 +126,7 @@ main{
     display: inline-block;
     box-shadow: 0px 0px 15px #F2CB05;
     padding: 10px 20px;
+    
 
     animation-duration: 3s;
     animation-name: deslizamiento;
@@ -195,7 +197,6 @@ main{
 .articulos{
     display: flex;
     justify-content: space-evenly;
-    padding: 30px 0;
     width: 100%;
 
 }
@@ -364,17 +365,13 @@ footer{
     color: #F2CB05;
 }
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:981px) {
+
 
     .container{
-       
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 10% 3% 800px 1fr 8%;
-       
-        
-    
+        grid-template-rows: 5% 6% 25% 55% 8%;
     }
+
 
     .nav .item ul{
         display: flex;
@@ -383,12 +380,10 @@ footer{
     }
 
     .item li{
-        padding: 2px 0 ;
+        padding: 5px 0 ;
     }
 
-    .baner{
-    padding: 60px 0;
-    }
+   
 
     
 
@@ -403,9 +398,12 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        ;
+    
+
 
     }
+
+    
 
     
 
@@ -434,7 +432,8 @@ footer{
 
 
 
-@media screen and (max-width:630px){
+@media screen and (max-width:650px){
+    
     .form_container{
         width: 300px;
     }
@@ -446,15 +445,17 @@ footer{
     .table_content {
         overflow-x: scroll;
     }
+
+
 }
 
-@media screen and (max-width:320px){
-    .articulos{
+@media screen and (max-width: 360px){
 
-        margin-top: 40px;
-    
+    .container{
+        grid-template-rows: 5% 6% 28% 52% 8%;
     }
 }
+    
 
 /* *************************************************
 *********************ANIMACIONES******************************** */
