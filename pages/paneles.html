@@ -6,96 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- bosstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="container">
+<body>
     <header class="encabezado">
         <img src="../Imagenes/logo_tacoma.jpg" alt="logo tacoma">   
     </header>
 
-    <nav class="nav">
-        <div class="nav item">  
-            <ul>
-                <li><a href="../index.html">INICIO<a></li>
-                <li><a href="./promociones.html">PROMOCIONES<a></li>
-                <li><a href="./reflectores.html">REFLECTORES</a></li>
-                <li><a href="./paneles.html">PANELES</a></li>
-                <li><a href="./contactos.html">CONTACTO</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
+        <div class="container-fluid d-flex barra_nav ">
+          <a class="navbar-brand" href="../index.html">INICIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./reflectores.html">REFLECTORES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paneles.html">PANELES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./promociones.html">PROMOCIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./contactos.html">CONTACTO</a>
+              </li>
             </ul>
+          </div>
         </div>
     </nav>
 
-    <section class="seccion_paneles">
-        
-        <div class="articulos_paneles">
-            
-             <h6>PANELES</h6>
-            
-            
-             <div class="contenido">
-                <div class="card">
-                    <div class="card_img">
-                        <img src="../Imagenes/panelesRedondos.png" alt="Panel Redondo">
-                      
-                    </div>
-                    <div class="card_content">
-                        <a href="./paneles.html">
-                        <h3>PANELES REDONDOS</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque tempore saepe accusamus in molestias aspernatur suscipit beatae nulla rerum id?</p>
-                        <h5>$600,00<h5>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_img">
-                        <img src="../Imagenes/panelescuadrado.png" alt="Panel Cuadrado">
-                      
-                    </div>
-                    <div class="card_content">
-                        <a href="./reflectores.html">
-                        <h3>PANELES CUADRADOS</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eveniet aspernatur iste labore id, repellendus dignissimos facere quidem ea beatae.</p>
-                        <h5>$950,00<h5>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_img">
-                        <img src="../Imagenes/panel de emutir" alt="Panel Redondo">
-                      
-                    </div>
-                    <div class="card_content">
-                        <a href="./paneles.html">
-                        <h3>PANEL LED EMBUTIR</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis consectetur pariatur eum illo nemo aliquam expedita accusantium dolorem! Amet, ad.</p>
-                        <h5>$2200,00<h5>
-                        </a>
-                    </div>
-                    
-                </div>
-                <div class="card">
-                    <div class="card_img">
-                        <img src="../Imagenes/panel_largo.png" alt="Panel largo">
-                      
-                    </div>
-                    <div class="card_content">
-                        <a href="./paneles.html">
-                        <h3>PANELES LED ANTI-POLVO</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod culpa aspernatur, dolorum eum magni asperiores. Labore deserunt et tempora aut.</p>
-                        <h5>$2500,00<h5>
-                        </a>
-                    </div>
-                    
-                </div>
-
+    <section class="container">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade p-3 " data-bs-ride="carousel">
+            <div class="carousel-inner d-flex justify-content-between">
+              <div class="carousel-item active">
+                <img src="../Imagenes/panel_largo.png" class="d-block w-100" alt="panel_largo">
+              </div>
+              <div class="carousel-item">
+                <img src="../Imagenes/panel de emutir" class="d-block w-100" alt="paneles EMBUTIR">
+              </div>
+              <div class="carousel-item">
+                <img src="../Imagenes/panelesCuadrado.png" class="d-block w-100" alt="panelesCuadrado">
+              </div>
+              <div class="carousel-item">
+                <img src="../Imagenes/panelesRedondos.png" class="d-block w-100" alt="panelesRedondos">
+              </div>
             </div>
-            
-
-
-        </div>
-
-       
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+              <span class="visually-hidden ">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
  
     <footer>
@@ -119,6 +98,14 @@
             </div>
         </div>
     </footer>
+
+
+
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>
