@@ -151,6 +151,7 @@ main{
   align-items: center;
   width: 100%;
   height: auto;
+  padding-top: 15px;
 }
 
 .form_container{
@@ -216,6 +217,7 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  
   
 }
 
@@ -307,17 +309,23 @@ main{
 .card_content a {
   text-decoration: none;
   color: #F2CB05;
+
 }
 
 
 
 .card_content p {
   text-align: center;
-  line-height: 30PX;
+  line-height: 30px;
   font-weight: 700;
   color: #0D6BA6;
   padding: 0 10px;
   
+}
+
+.card_content h3{
+  font-weight: 900;
+  font-size: 2.4em;
 }
 
 .card_content h5 {
@@ -343,6 +351,25 @@ main{
   letter-spacing: 2.5em;
 }
 
+
+
+/* carrousel */
+.carru_img {
+  width: 70vh;
+  height: auto;
+  margin: auto;
+}
+
+.carru_img .card {
+  width: 80%;
+  margin: auto;
+}
+
+
+
+
+
+
 /* pie de pagina */
 
 footer{
@@ -350,6 +377,7 @@ footer{
   grid-column: 1 / span 4;
   grid-row: 5 / 6;
   border-top:3px solid #F2CB05 ;
+  margin-top: 15px;
 }
 
 .pie{
