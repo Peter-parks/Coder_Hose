@@ -158,6 +158,7 @@ main{
   background-color: rgb(230, 230, 245, 0.1) ;
   box-shadow: 0px 0px 10px 0px #333 inset;
   width: 600px;
+  height: auto;
   padding-left: 15px;
 
 
@@ -355,8 +356,7 @@ main{
 
 /* carrousel */
 .carru_img {
-  width: 70vh;
-  height: auto;
+  width: 50%;
   margin: auto;
 }
 
@@ -437,6 +437,13 @@ footer{
 
   }
 
+    /* carrusel */
+
+    .carru_img {
+      width: 100%;
+      margin: auto;
+    }
+  
   
 
   
@@ -480,6 +487,10 @@ footer{
       overflow-x: scroll;
   }
 
+  .carru_img {
+    width: 100%;
+    margin: auto;
+  }
 
 }
 
@@ -488,6 +499,12 @@ footer{
   .container{
       grid-template-rows: 5% 6% 28% 52% 8%;
   }
+
+  .carru_img {
+    width: 100%;
+    margin: auto;
+  }
+
 }
   
 
