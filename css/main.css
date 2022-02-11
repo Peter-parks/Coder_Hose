@@ -1,0 +1,232 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  background: #0d6ba6;
+  background: linear-gradient(148deg, #0d6ba6 0%, #124673 42%, #41aed9 100%); }
+
+.barra_nav {
+  background-color: #F2CB05; }
+  .barra_nav .li {
+    padding: 0 15px; }
+
+/* encabezado (logo de tacomma) */
+.encabezado {
+  grid-column: 1/ span 4;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  padding: 8px 0; }
+  .encabezado .img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px #F2CB05; }
+    .encabezado .img .img:hover {
+      animation-duration: 6s;
+      animation-name: girando;
+      animation-timing-function: ease-out; }
+
+/* nav style */
+.nav {
+  grid-column: 1/span 4;
+  grid-row: 2 /3;
+  margin: 5px 0; }
+  .nav .item {
+    border-top: 3px solid #F2CB05;
+    border-bottom: 3px solid #F2CB05;
+    text-align: center; }
+    .nav .item .item ul {
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none; }
+      .nav .item .item ul .ul a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 1em;
+        color: #F2CB05; }
+
+/* principal */
+main {
+  grid-column: 1/ span 4;
+  grid-row: 3/4;
+  height: 70%;
+  /* seccion de Card */
+  /* CARDS */
+  /* carrousel */
+  /* pie de pagina */
+  /* *************************************************
+  *********************ANIMACIONES******************************** */ }
+  main .baner {
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    main .baner .img {
+      padding: 10PX 0;
+      object-fit: fill;
+      width: 100%; }
+  main .bienvenida {
+    width: 60%; }
+    main .bienvenida .bien_item {
+      position: relative;
+      left: 33%;
+      text-align: center;
+      color: #F2CB05;
+      text-transform: uppercase;
+      line-height: 1.5em; }
+      main .bienvenida .bien_item .a {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #41AED9;
+        display: inline-block;
+        box-shadow: 0px 0px 15px #F2CB05;
+        padding: 10px 20px;
+        animation-duration: 3s;
+        animation-name: deslizamiento;
+        animation-duration: 6s; }
+  main .seccion {
+    grid-column: 1/ span 4;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0; }
+  main .seccion h6 {
+    font-weight: 900;
+    font-size: 2.5em; }
+  main .articulos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; }
+  main .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 30px 30px black;
+    background-color: black;
+    margin: 10px;
+    border-radius: 5%;
+    padding: 10px; }
+    main .card .card_img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      main .card .card_img .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+        border-radius: 5%; }
+        main .card .card_img .img .card:hover .card_img img {
+          opacity: 0.2; }
+    main .card .card_content {
+      position: absolute;
+      bottom: 20px;
+      left: 10%;
+      width: 80%;
+      height: 60px;
+      transition: 0.5s;
+      overflow: hidden;
+      text-align: center; }
+      main .card .card_content .card_content:hover {
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0; }
+      main .card .card_content .a {
+        text-decoration: none;
+        color: #F2CB05; }
+        main .card .card_content .a .h3 {
+          font-weight: 900;
+          font-size: 2.4em; }
+        main .card .card_content .a .p {
+          text-align: center;
+          line-height: 30px;
+          font-weight: 700;
+          color: #0D6BA6;
+          padding: 0 10px; }
+        main .card .card_content .a .h5 {
+          text-align: center;
+          font-size: 30px;
+          color: #F2CB05; }
+  main .carru_img {
+    width: 50%;
+    margin: auto; }
+    main .carru_img .card {
+      width: 80%;
+      margin: auto; }
+  main footer {
+    grid-column: 1 / span 4;
+    grid-row: 5 / 6;
+    border-top: 3px solid #F2CB05;
+    margin-top: 15px; }
+    main footer .pie {
+      text-align: center; }
+      main footer .pie .pie_redes h4 {
+        font-size: 1.5em;
+        color: #F2CB05; }
+        main footer .pie .pie_redes h4 .a {
+          padding: 0 5px; }
+    main footer .pie_contacto a {
+      text-decoration: none;
+      color: #F2CB05; }
+  @media screen and (max-width: 981px) {
+ 
+      main .container {
+        grid-template-rows: 5% 6% 25% 55% 8%; }
+      main .nav .item ul {
+        display: flex;
+        flex-flow: column wrap; }
+        main .nav .item ul .item li {
+          padding: 5px 0; }
+      main .bien_item h2 {
+        line-height: 1.5em; }
+      main .seccion .articulos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+      main .carru_img {
+        width: 100%;
+        margin: auto; }
+      main .articulos_paneles .contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center; }
+      main .articulos_paneles h6 {
+        font-size: 2em;
+        font-weight: 900;
+        letter-spacing: 0; } }
+  @media screen and (max-width: 650px) {
+    main .form_container {
+      width: 300px; }
+    main .seccion_map {
+      display: none; }
+    main .table_content {
+      overflow-x: scroll; }
+    main .carru_img {
+      width: 100%;
+      margin: auto; } }
+  @media screen and (max-width: 360px) {
+    main .container {
+      grid-template-rows: 5% 6% 28% 52% 8%; }
+    main .carru_img {
+      width: 100%;
+      margin: auto; } }
+
+@keyframes deslizamiento {
+  from {
+    margin-left: 100%; }
+  to {
+    margin-left: 0%; } }
+
+@keyframes girando {
+  from {
+    transform: rotate(0grad); }
+  to {
+    transform: rotate(400grad); } }

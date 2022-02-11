@@ -1,0 +1,438 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    background: rgb(13,107,166);
+    background: linear-gradient(148deg, rgba(13,107,166,1) 0%, rgba(18,70,115,1) 42%, rgba(65,174,217,1) 100%);
+  }
+  
+  
+  
+  
+  .barra_nav{ 
+  
+    background-color:#F2CB05 ;
+  
+    .li {
+            padding: 0 15px;
+    }    
+    
+  }
+
+
+
+/* encabezado (logo de tacomma) */
+
+.encabezado{
+
+    grid-column: 1/ span 4;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    
+  
+  .img {
+    
+   
+        border-radius: 50%;
+        box-shadow: 0px 0px 50px #F2CB05;    
+  
+  
+        .img:hover{
+            animation-duration: 6s;
+            animation-name: girando;
+            animation-timing-function: ease-out;
+        }
+    }
+}
+
+/* nav style */
+
+.nav{
+    grid-column: 1/span 4;
+    grid-row: 2 /3 ;
+    margin: 5px 0;
+   
+  .item{
+    border-top: 3px solid #F2CB05;
+    border-bottom:3px solid #F2CB05 ;
+    text-align: center;
+    
+  
+  
+  
+        .item ul{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+    
+  
+  
+  
+            .ul a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 1em;
+                color: #F2CB05;
+            }
+        }
+    }          
+    
+}
+
+/* principal */
+
+main{
+  
+    grid-column: 1/ span 4;
+    grid-row: 3/4 ;
+    height: 70%;
+
+  
+    .baner{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+  
+  
+        .img{
+            padding: 10PX 0;
+            object-fit: fill;
+            width: 100%;
+    
+            
+        }   
+    }   
+        
+        .bienvenida{
+           width: 60%;
+        
+
+    
+            .bien_item{
+                    position: relative;
+                    left: 33%;
+                    text-align: center;
+                    color: #F2CB05;
+                    text-transform: uppercase;
+                    line-height: 1.5em;
+            
+
+        
+        
+                    .a {
+                            text-decoration: none;
+                            font-size: 1.5em;
+                            color: #41AED9;
+                            display: inline-block;
+                            box-shadow: 0px 0px 15px #F2CB05;
+                            padding: 10px 20px;
+                                
+                            
+                            animation-duration: 3s;
+                            animation-name: deslizamiento;
+                            animation-duration: 6s;
+            }
+        
+    }
+                    
+}
+
+/* seccion de Card */
+
+.seccion{
+  
+    grid-column: 1/ span 4;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    
+  }
+  
+  .seccion h6{
+    font-weight: 900;
+    font-size: 2.5em;
+  }
+  
+  .articulos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  
+  }
+
+  /* CARDS */
+
+.card{
+
+        position: relative;
+        width: 300px;
+        height: 400px;
+        box-shadow: 0 30px 30px black;
+        background-color: black;
+        margin: 10px;
+        border-radius: 5%;
+        padding: 10px;
+    
+    
+        .card_img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+  
+            .img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 0.5s;
+                border-radius: 5%;
+                
+                .card:hover .card_img img {
+                    opacity: 0.2;
+                }
+            }
+        }
+
+        .card_content {
+            position: absolute;
+            bottom: 20px;
+            left: 10%;
+            width: 80%;
+            height: 60px;
+            transition: 0.5s;
+            overflow: hidden;
+            text-align: center;
+          
+            .card_content:hover{
+          
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+                left: 0;
+            }
+
+            .a {
+                text-decoration: none;
+                color: #F2CB05;
+            
+                .h3{
+                    font-weight: 900;
+                    font-size: 2.4em;
+                }
+    
+                .p {
+                    text-align: center;
+                    line-height: 30px;
+                    font-weight: 700;
+                    color: #0D6BA6;
+                    padding: 0 10px;
+                    
+                }
+    
+                .h5 {
+                    text-align: center;
+                    font-size: 30px;
+                    color: #F2CB05;
+                }
+            
+            }
+
+           
+         
+           
+          
+        }    
+    
+}        
+ 
+  /* carrousel */
+.carru_img {
+    width: 50%;
+    margin: auto;
+
+  
+    .card {
+        width: 80%;
+        margin: auto;
+    }    
+}
+
+/* pie de pagina */
+
+footer{
+ 
+    grid-column: 1 / span 4;
+    grid-row: 5 / 6;
+    border-top:3px solid #F2CB05 ;
+    margin-top: 15px;
+  
+  
+    .pie{
+        
+        text-align: center;
+    
+  
+        .pie_redes h4 {
+            font-size: 1.5em;
+            color: #F2CB05;
+
+            .a {
+                padding: 0 5px;
+              
+            }
+        }
+    }    
+  
+  .pie_contacto a {
+    text-decoration: none;
+    color: #F2CB05;
+  }
+}  
+
+
+
+@media screen and (max-width:981px) {
+
+
+    .container{
+        grid-template-rows: 5% 6% 25% 55% 8%;
+    }
+  
+  
+    .nav .item ul{
+        display: flex;
+        flex-flow:column wrap;
+  
+    
+  
+        .item li{
+            padding: 5px 0 ;
+        }    
+    }
+  
+   
+  
+    
+  
+    .bien_item h2{
+    
+        line-height: 1.5em;
+    }
+  
+    .seccion .articulos {
+  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+  
+  
+    }
+  
+      /* carrusel */
+  
+      .carru_img {
+        width: 100%;
+        margin: auto;
+      }
+    
+    
+  
+    
+  
+   
+  
+    /* paneles */
+  
+    .articulos_paneles .contenido {
+  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    
+    }
+  
+    .articulos_paneles h6{
+     
+        font-size: 2em;
+        font-weight: 900;
+        letter-spacing: 0;
+    }
+   
+  }
+  
+  @media screen and (max-width:650px){
+  
+    .form_container{
+        width: 300px;
+    }
+  
+    .seccion_map {
+        display: none;
+     }
+  
+    .table_content {
+        overflow-x: scroll;
+    }
+  
+    .carru_img {
+      width: 100%;
+      margin: auto;
+    }
+  
+  }
+  
+  @media screen and (max-width: 360px){
+  
+    .container{
+        grid-template-rows: 5% 6% 28% 52% 8%;
+    }
+  
+    .carru_img {
+      width: 100%;
+      margin: auto;
+    }
+  
+  }
+    
+  
+  /* *************************************************
+  *********************ANIMACIONES******************************** */
+  
+  @keyframes deslizamiento {
+    
+    from {
+        margin-left:100%;
+        
+    }
+      
+    to {
+        margin-left:0%;
+       
+    }
+      
+   
+  }
+  
+  @keyframes girando {
+    from {
+        transform : rotate(0grad);
+    }
+  
+    to{
+        transform : rotate(400grad);
+    }
+}
+}
