@@ -1,7 +1,9 @@
+@import "./variables/colores";
+
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
-    background: rgb(13,107,166);
+    background: $color-principal;
     background: linear-gradient(148deg, rgba(13,107,166,1) 0%, rgba(18,70,115,1) 42%, rgba(65,174,217,1) 100%);
   }
   
@@ -9,7 +11,7 @@ body{
   
   .barra_nav{ 
   
-    background-color:#F2CB05 ;
+    background-color:$color-secundario ;
     
   }
   
@@ -38,7 +40,7 @@ body{
     
    
     border-radius: 50%;
-    box-shadow: 0px 0px 50px #F2CB05;    
+    box-shadow: 0px 0px 50px $color-secundario;    
   }
   
   .encabezado img:hover{
@@ -56,10 +58,13 @@ body{
    
   
   }
+
+
+  
   
   .item{
-    border-top: 3px solid #F2CB05;
-    border-bottom:3px solid #F2CB05 ;
+    border-top: 3px solid $color-secundario;
+    border-bottom:3px solid $color-secundario ;
     text-align: center;
     
   }
@@ -78,7 +83,7 @@ body{
     text-transform: uppercase;
     font-weight: 900;
     font-size: 1em;
-    color: #F2CB05;
+    color: $color-secundario;
     
   }
   
@@ -116,7 +121,7 @@ body{
     position: relative;
     left: 33%;
     text-align: center;
-    color: #F2CB05;
+    color: $color-secundario;
     text-transform: uppercase;
     line-height: 1.5em;
     
@@ -128,7 +133,7 @@ body{
     font-size: 1.5em;
     color: #41AED9;
     display: inline-block;
-    box-shadow: 0px 0px 15px #F2CB05;
+    box-shadow: 0px 0px 15px $color-secundario;
     padding: 10px 20px;
     
   
@@ -173,7 +178,7 @@ body{
   }
   
   .boton_form .enviar {
-    background-color:#F2CB05;
+    background-color:$color-secundario;
   }
   
   .seccion_map h6 {
@@ -308,7 +313,7 @@ body{
   
   .card_content a {
     text-decoration: none;
-    color: #F2CB05;
+    color: $color-secundario;
   
   }
   
@@ -331,7 +336,7 @@ body{
   .card_content h5 {
     text-align: center;
     font-size: 30px;
-    color: #F2CB05;
+    color: $color-secundario;
   }
   
   /* promociones style */
@@ -375,7 +380,7 @@ body{
    
     grid-column: 1 / span 4;
     grid-row: 5 / 6;
-    border-top:3px solid #F2CB05 ;
+    border-top:3px solid $color-secundario ;
     margin-top: 15px;
   }
   
@@ -385,7 +390,7 @@ body{
   
   .pie_redes h4 {
     font-size: 1.5em;
-    color: #F2CB05;
+    color: $color-secundario;
   }
   
   .pie_redes a {
@@ -395,7 +400,7 @@ body{
   
   .pie_contacto a {
     text-decoration: none;
-    color: #F2CB05;
+    color: $color-secundario;
   }
   
   @media screen and (max-width:981px) {
