@@ -1,0 +1,4 @@
+Agregue las palabras claves a traves de los META
+Realice el SiteMaps
+Agregue algunos "alt" que no habia puesto
+
